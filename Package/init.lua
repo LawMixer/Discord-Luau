@@ -88,4 +88,8 @@ export type DiscordGuild = DiscordGuild.DiscordGuild
 local DiscordInteraction = require("Types/DiscordInteraction")
 export type DiscordInteraction = DiscordInteraction.DiscordInteraction
 
+local DiscordClient = require("Classes/DiscordClient")
+export type DiscordClient = DiscordClient.DiscordClient
+
+
 return DiscordLuau

@@ -119,6 +119,28 @@ function DiscordIntents.Interface.fromAll()
 	return DiscordIntents.Interface.new(FetchKeys(allIntents))
 end
 
+
+DiscordIntents.Intents = {
+	Intents.GuildMembers, 
+	Intents.GuildModeration, 
+	Intents.GuildEmojisAndStickers, 
+	Intents.GuildIntegrations, 
+	Intents.GuildWebhooks, 
+	Intents.GuildInvites, 
+	Intents.GuildVoiceState, 
+	Intents.GuildPresences,
+	Intents.GuildMessage,
+	Intents.GuildMessageReactions,
+	Intents.GuildMessageTyping,
+	Intents.DirectMessage,
+	Intents.DirectMessageReactions,
+	Intents.DirectMessageTyping,
+	Intents.GuildMessageContent,
+	Intents.GuildScheduledEvents,
+	Intents.GuildModerationConfiguration,
+	Intents.GuildModerationExecution, 
+}
+
 export type DiscordIntents = typeof(DiscordIntents.Prototype) & {}
 
-return DiscordIntents.Interface
+return DiscordIntents

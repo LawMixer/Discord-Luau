@@ -50,7 +50,6 @@ DiscordClient.Prototype = {}
 DiscordClient.Interface = {}
 
 DiscordClient.Prototype.type = "DiscordClient"
-
 --[=[
 	@method connectAsync
 	@within DiscordClient
@@ -346,6 +345,8 @@ export type DiscordClient = typeof(DiscordClient.Prototype) & {
 	maxConcurrency: number,
 
 	onEvent: Signal.Signal<string, { [any]: any }?>,
+
+	Events: DiscordEvents, 
 
 	reporter: Console.Console,
 
